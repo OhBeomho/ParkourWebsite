@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Introduce</title>
+
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+	<style>
+		.nav-link:hover {
+			cursor: pointer;
+		}
+
+		.container-fluid {
+			text-align: center;
+			justify-content: center;
+			align-items: center;
+			margin: auto;
+		}
+
+		.container {
+			text-align: center;
+			justify-content: center;
+			align-items: center;
+			margin: auto;
+			display: flex;
+		}
+
+		.container-fluid.content {
+			min-height: 100vh;
+		}
+
+		.parkourimg {
+			width: 50%;
+		}
+
+		#sneakPeaks {
+			width: 70%;
+			margin: auto;
+			margin-bottom: 40px;
+		}
+
+		#copy {
+			background: rgb(62, 62, 62);
+			color: white;
+			height: 50px;
+			margin-top: 100px;
+		}
+	</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<div class="container-fluid">
+		  <a class="navbar-brand">Roblox Parkour</a>
+		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+			  <li class="nav-item">
+				<a id="info" class="nav-link" onclick="setPage('info')">Info</a>
+			  </li>
+			  <li class="nav-item">
+				<a id="tutorial" class="nav-link" onclick="setPage('tutorial')">Tutorial</a>
+			  </li>
+			  <li class="nav-item">
+				<a id="youtubers" class="nav-link" onclick="setPage('youtubers')">Youtubers</a>
+			  </li>
+			</ul>
+		  </div>
+		</div>
+	</nav>
+
+	<div class="container-fluid content" id="infop" style="display: none;">
+		<p style="font-size: 60px;">Roblox Parkour</p>
+
+		<img src="https://tr.rbxcdn.com/572db4b8df703adeb8de9bd2e880f4e1/768/432/Image/Png" class="parkourimg" style="margin-bottom: 40px;" alt="">
+
+		<p style="margin-bottom: 60px;">
+			<strong style="font-size: 20px;">로블록스 파쿠르(Roblox Parkour)</strong><br/><br/>
+			로블록스의 게임들 중 하나입니다. <strong>파쿠르 스킬들을 쓰면서 도시를 탐험</strong>하는
+			게임입니다.<br/>
+			<strong>진입장벽이 높기</strong> 때문에 처음에 하다가 어려워서 그만두는 사람도 있습니다.<br/>
+			하지만 계속 하다보면 실력이 늘게 되고, 재미있을 겁니다(아닐수도).
+		</p>
+
+		<p style="font-size: 30px;">게임 정보</p>
+		<table class="table" style="margin-bottom: 200px;">
+			<thead>
+			</thead>
+			<tbody>
+			  <tr>
+				<th scope="row">제작 날짜</th>
+				<td>2016년 6월 30일</td>
+			  </tr>
+			  <tr>
+				<th scope="row">제작자</th>
+				<td>hudzell</td>
+			  </tr>
+			  <tr>
+				<th scope="row">현재 버전</th>
+				<td>Version 1.935</td>
+			  </tr>
+			  <tr>
+				  <th scope="row">방문수</th>
+				  <td>200M+</td>
+			  </tr>
+			</tbody>
+		</table>
+
+		<hr/>
+
+		<p style="font-size: 40px;">Roblox Parkour Reborn</p>
+		<p style="margin-bottom: 60px;">
+			<strong>로블록스 파쿠르의 새로운 버전</strong>입니다.<br/>
+			Parkour Reborn 이 나오게 되면 기존의 파쿠르는 <strong>Parkour Legacy 로 이름이 바뀔 것</strong>입니다.<br/>
+			그래도 계속 플레이는 할 수 있습니다.
+		</p>
+
+		<p style="font-size: 12px;">
+			Parkour Reborn 에 대한 자세한 내용(영문):
+			<blockquote class="trello-card"><a href="https:&#x2F;&#x2F;trello.com&#x2F;c&#x2F;wXnzUdam&#x2F;30-parkour-reborn">Parkour Reborn</a></blockquote><script src="https://p.trellocdn.com/embed.min.js"></script>
+		</p>
+
+		<p style="font-size: 30px;">Parkour Reborn Sneak Peaks</p>
+		<div id="sneakPeaks" class="carousel slide" data-bs-ride="carousel">
+			<div class="carousel-indicators">
+				<button id="slidebutton" type="button" data-bs-target="#sneakPeaks" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+				<button id="slidebutton" type="button" data-bs-target="#sneakPeaks" data-bs-slide-to="1" aria-label="Slide 2"></button>
+				<button id="slidebutton" type="button" data-bs-target="#sneakPeaks" data-bs-slide-to="2" aria-label="Slide 3"></button>
+				<button id="slidebutton" type="button" data-bs-target="#sneakPeaks" data-bs-slide-to="3" aria-label="Slide 4"></button>
+				<button id="slidebutton" type="button" data-bs-target="#sneakPeaks" data-bs-slide-to="4" aria-label="Slide 5"></button>
+			</div>
+			<div class="carousel-inner">
+			  <div class="carousel-item active">
+				<video controls class="d-block w-100">
+					<source src="./videos/jump.mp4">
+				</video>
+				<div class="carousel-caption d-none d-md-block">
+					<h5>새로운 점프</h5>
+				</div>
+			  </div>
+			  <div class="carousel-item">
+				<video controls class="d-block w-100">
+					<source src="./videos/magropegp.mp4">
+				</video>
+				<div class="carousel-caption d-none d-md-block">
+					<h5>새로운 그래플러</h5>
+				</div>
+			  </div>
+			  <div class="carousel-item">
+				<video controls class="d-block w-100">
+					<source src="./videos/objects.mp4">
+				</video>
+				<div class="carousel-caption d-none d-md-block">
+					<h5>새로운 오브젝트들</h5>
+				</div>
+			  </div>
+			  <div class="carousel-item">
+				<video controls class="d-block w-100">
+					<source src="./videos/newrun.mp4">
+				</video>
+				<div class="carousel-caption d-none d-md-block">
+					<h5>새로운 달리기 애니메이션</h5>
+				</div>
+			  </div>
+			  <div class="carousel-item">
+				<video controls class="d-block w-100">
+					<source src="./videos/bug.mp4">
+				</video>
+				<div class="carousel-caption d-none d-md-block">
+					<h5>버그</h5>
+				</div>
+			  </div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid content" id="tutorialp" style="display: none;">
+		<p style="font-size: 60px; margin-bottom: 40px;">Roblox Parkour - Tutorial</p>
+		<p>
+			<p style="font-size: 40px;">기본 조작법</p><br/>
+			W A S D - 앞, 뒤, 옆으로 움직이기<br/>
+			스페이스바(Spacebar) - 점프<br/>
+			*시프트(Shift) - 슬라이딩, 낙법, 드롭다운<br/>
+			C - 걷기<br/>
+			*G - 벌트 교체<br/>
+			*Q - 퀵 턴(Quick turn)
+		</p>
+		<p style="font-size: 12px; margin-bottom: 100px;">
+			*시프트(Shift):<br/>
+			<strong>슬라이딩</strong> - 달릴 때 누르면 된다.<br/>
+			<strong>낙법</strong> - 떨어질 때 땅에 닿기 직전에 누르면 된다(너무 높으면 죽음).<br/>
+			<strong>드롭다운</strong> - 건물의 모서리에서 누르면 된다(계속 누르고 있으면 벽을 타고 좀 내려간다).
+			<br/><br/>
+			*G:<br/>
+			<strong>벌트 교체</strong> - 벌트 모드를 바꾼다. 스피드 벌트와 몽키 벌트가 있다.
+			<br/><br/>
+			*Q:<br/>
+			<strong>퀵 턴</strong> - 일인칭일 때만 사용 가능하며 카메라를 180 도 회전시킨다.
+		</p>
+
+		<p>
+			<p style="font-size: 40px;">튜토리얼 영상</p><br/>
+			<p style="font-size: 12px;">
+				<a href="https://www.youtube.com/channel/UCmwkJUYNjWvFsIWbZkJwYXA">ViewJa</a> 님의 유튜브 영상<br/>
+				현재는 기본 튜토리얼과 고급 튜토리얼이 업데이트 되어서 영상과 살짝 다릅니다.
+			</p>
+			<iframe width="1200" height="600" src="https://www.youtube.com/embed/eOJ_IvgTne8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</p>
+	</div>
+
+	<div class="container-fluid content" id="youtubersp" style="display: none;">
+		<p style="font-size: 60px;">Roblox Parkour - Youtubers</p>
+		<p style="font-size: 40px;">로블록스 파쿠르 유튜버</p>
+		<div class="container" style="margin-bottom: 200px;">
+			<div class="card" style="width: 18rem;">
+				<img src="https://yt3.ggpht.com/ytc/AKedOLRDEU6qDDnWmmF5rkBM5tZtgpC6NBKR-tNWsDy-Tw=s900-c-k-c0x00ffffff-no-rj" class="card-img-top" alt="...">
+				<div class="card-body">
+				  <h5 class="card-title">VecetyP</h5>
+				  <p class="card-text">구독자 2.9만명</p>
+				  <p class="text-muted"><small>실력좋은 파쿠르 유튜버</small></p>
+				  <a href="https://www.youtube.com/c/VecetyP" class="btn btn-primary">채널 보기</a>
+				</div>
+			</div>
+			<div class="card" style="width: 18rem;">
+				<img src="https://yt3.ggpht.com/YFB7-gFR2AM6NhpEAqam352-byGWAlp2kSSsWDsK5FeBMhIECCkTDDZTVNyXUbQRlQ2HwcqN=s900-c-k-c0x00ffffff-no-rj" class="card-img-top" alt="...">
+				<div class="card-body">
+				  <h5 class="card-title">Divided</h5>
+				  <p class="card-text">구독자: 4.19천명</p>
+				  <p class="text-muted"><small>Wingsuit 실력 좋음</small></p>
+				  <a href="https://www.youtube.com/c/dividedparkour" class="btn btn-primary">채널 보기</a>
+				</div>
+			</div>
+			<div class="card" style="width: 18rem;">
+				<img src="https://yt3.ggpht.com/U0Yu9ixnrcqkk3DOXL2b3UvnWjbkOmTKrML3v0mW8tKyYWDaLkD_0lvCpTIMjLc14VuVjh0rNYc=s900-c-k-c0x00ffffff-no-rj" class="card-img-top" alt="...">
+				<div class="card-body">
+				  <h5 class="card-title">IssaRam</h5>
+				  <p class="card-text">구독자: 3.29천명</p>
+				  <p class="text-muted"><small>최초의 엘리트</small></p>
+				  <a href="#" class="btn btn-primary">채널 보기</a>
+				</div>
+			</div>
+			<div class="card" style="width: 18rem;">
+				<img src="https://yt3.ggpht.com/kAlwgbUOREcjJh7AZaAzqEGKOZy2zRZWko8p2O0y1Op4vXvmxNcexapg9zzF6yWdR_m272gNTHQ=s900-c-k-c0x00ffffff-no-rj" class="card-img-top" alt="...">
+				<div class="card-body">
+				  <h5 class="card-title">ViewJa</h5>
+				  <p class="card-text">구독자 846명</p>
+				  <p class="text-muted"><small>한국인. 현재는 활동 안함</small></p>
+				  <a href="https://www.youtube.com/c/ViewJa" class="btn btn-primary">채널 보기</a>
+				</div>
+			</div>
+			<div class="card" style="width: 18rem;">
+				<img src="https://yt3.ggpht.com/ytc/AKedOLRCWuQtm9DJLDbl3HNMUOLAKak7lPKOaMmITP9v4A=s900-c-k-c0x00ffffff-no-rj" class="card-img-top" alt="...">
+				<div class="card-body">
+				  <h5 class="card-title">hwlq</h5>
+				  <p class="card-text">구독자 8.06천명</p>
+				  <p class="text-muted"><small>Final Challenge 로 유명</small></p>
+				  <a href="https://www.youtube.com/c/hwlqq" class="btn btn-primary">채널 보기</a>
+				</div>
+			</div>
+		</div>
+
+		<p>
+			VecetyP 기어리스 프런
+		</p>
+		<iframe width="1200" height="600" src="https://www.youtube.com/embed/YngWAKwbVCQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>
+
+	<div class="container-fluid" id="copy">
+		<p>
+			Used <strong><a href="https://getbootstrap.com/" class="link-info">bootstrap</a> css, js</strong>.<br/>
+			<a href="https://github.com/ParkourWebsite" class="link-info">Source on GitHub.</a>
+		</p>
+	</div>
+
+	<!-- Bootstrap JS -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+	<script>
+		const urlParams = new URL(location.href).searchParams;
+		let visible;
+
+		if (urlParams.has("visible")) {
+			visible = urlParams.get("visible");
+		} else {
+			location.href += "?visible=info";
+		}
+
+		document.querySelector(`#${visible}p`).removeAttribute("style");
+		document.querySelector(`#${visible}`).setAttribute("class", "nav-link active");
+
+		const vids = document.querySelectorAll("video");
+		for (let i = 0; i < vids.length; i++) {
+			vids[i].volume = 0.5;
+		}
+
+		const buttons = document.querySelectorAll("#slidebutton");
+		for (let i = 0; i < buttons.length; i++) {
+			buttons[i].addEventListener("click", () => pauseAll());
+		}
+
+		function pauseAll() {
+			for (let i = 0; i < vids.length; i++) {
+				vids[i].pause();
+			}
+		}
+
+		function setPage(id) {
+			location.href = `${location.origin}${location.pathname}?visible=${id}`;
+		}
+	</script>
+</body>
+</html>
